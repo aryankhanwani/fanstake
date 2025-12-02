@@ -56,8 +56,6 @@ export default function SplitText({
       scrollTrigger: {
         trigger: container,
         start: 'top 80%',
-        threshold: threshold,
-        rootMargin: rootMargin,
         toggleActions: 'play none none none',
         onEnter: () => {
           if (hasAnimated.current) return;
@@ -80,7 +78,7 @@ export default function SplitText({
     return () => {
       tl.kill();
     };
-  }, [text, delay, duration, ease, from, to, threshold, rootMargin, onLetterAnimationComplete]);
+  }, [text, delay, duration, ease, from, to, onLetterAnimationComplete]);
 
   // Split text into characters
   const splitText = () => {
