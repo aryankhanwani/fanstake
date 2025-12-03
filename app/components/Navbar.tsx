@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useEmailModal } from "./EmailModalProvider";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { openModal } = useEmailModal();
 
   // Close menu when route changes
   useEffect(() => {
@@ -66,7 +68,10 @@ export default function Navbar() {
                 >
                   FAQ
                 </Link>
-                <button className="bg-gray-900 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-xl font-bold text-sm lg:text-base tracking-wide uppercase hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md animation-delay-400 animate-fade-in">
+                <button 
+                  onClick={openModal}
+                  className="bg-gray-900 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-xl font-bold text-sm lg:text-base tracking-wide uppercase hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md animation-delay-400 animate-fade-in"
+                >
                   Join waitlist
                 </button>
               </div>
@@ -126,7 +131,13 @@ export default function Navbar() {
                 >
                   FAQ
                 </Link>
-                <button className="bg-gray-900 text-white px-5 py-3 rounded-xl font-bold text-base tracking-wide uppercase hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md w-full text-left">
+                <button 
+                  onClick={() => {
+                    openModal();
+                    setIsMenuOpen(false);
+                  }}
+                  className="bg-gray-900 text-white px-5 py-3 rounded-xl font-bold text-base tracking-wide uppercase hover:bg-gray-800 transition-all transform hover:scale-105 shadow-md w-full text-left"
+                >
                   Join waitlist
                 </button>
               </div>

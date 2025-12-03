@@ -1,8 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { useEmailModal } from "../components/EmailModalProvider";
 
 export default function FAQ() {
+  const { openModal } = useEmailModal();
   const faqs = [
     {
       question: "Is this equity in a club?",
@@ -98,7 +102,10 @@ export default function FAQ() {
                   Join the waitlist and be among the first to access exclusive sports investment opportunities when we launch.
                 </p>
                 <div className="pt-4 sm:pt-6 md:pt-8 animate-fade-in-up animation-delay-300">
-                  <button className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto">
+                  <button 
+                    onClick={openModal}
+                    className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto"
+                  >
                     Join the Waitlist
                   </button>
                 </div>

@@ -7,8 +7,10 @@ import { Card, CardContent, CardHeader } from "@/app/components/ui/card";
 import { Shield, Zap, DollarSign, TrendingUp, Lock, Globe, BarChart3 } from "lucide-react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { useEmailModal } from "../components/EmailModalProvider";
 
 export default function HowItWorks() {
+  const { openModal } = useEmailModal();
   const [activeStep, setActiveStep] = useState(1);
   const [progress, setProgress] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -379,7 +381,10 @@ export default function HowItWorks() {
                   </p>
                 </div>
                 <div className="pt-2 sm:pt-4">
-                  <button className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl relative overflow-hidden group w-full sm:w-auto">
+                  <button 
+                    onClick={openModal}
+                    className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl relative overflow-hidden group w-full sm:w-auto"
+                  >
                     <span className="relative z-10">Join the Waitlist</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-white opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   </button>

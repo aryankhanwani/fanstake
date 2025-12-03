@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import SplitText from "./components/SplitText";
@@ -5,16 +7,19 @@ import { ContainerTextFlip } from "./components/ui/container-text-flip";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import HeroCTA from "./components/HeroCTA";
+import { useEmailModal } from "./components/EmailModalProvider";
 import { Zap, Shield, Users } from "lucide-react";
 import { Spotlight } from "@/components/motion-primitives/spotlight";
 
 export default function Home() {
+  const { openModal } = useEmailModal();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section - Content Box with Mockup Inside */}
-      <section id="hero" className="w-full px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 xl:pt-20 pb-16 sm:pb-24 lg:pb-32 overflow-hidden">
+      <section id="hero" className="w-full px-4 sm:px-6 lg:px-8 pt-4 sm:pt-10 lg:pt-16 xl:pt-20 pb-10 sm:pb-20 lg:pb-32 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="relative">
             {/* Main Hero Content Box */}
@@ -99,7 +104,7 @@ export default function Home() {
               <div className="mt-auto pt-6 sm:pt-8">
                 <SplitText
                   text="FANSTAKE"
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-[10rem] font-bold text-gray-900 tracking-tight leading-none"
+                  className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-[10rem] font-bold text-gray-900 tracking-tight leading-none"
                   delay={70}
                   duration={3}
                   ease="elastic.out(1, 0.3)"
@@ -554,7 +559,10 @@ export default function Home() {
                   Join thousands of fans and investors who are already part of the revolution.
                 </p>
                 <div className="pt-4 sm:pt-6">
-                  <button className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto">
+                  <button 
+                    onClick={openModal}
+                    className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto"
+                  >
                     Join the Waitlist
                   </button>
                 </div>
