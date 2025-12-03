@@ -4,6 +4,7 @@ import SplitText from "./components/SplitText";
 import { ContainerTextFlip } from "./components/ui/container-text-flip";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import HeroCTA from "./components/HeroCTA";
 import { Zap, Shield, Users } from "lucide-react";
 import { Spotlight } from "@/components/motion-primitives/spotlight";
 
@@ -42,15 +43,8 @@ export default function Home() {
                   </p>
                   
                   {/* CTA Section */}
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 pt-2 sm:pt-4 animate-fade-in-up animation-delay-500">
-                    <button className="bg-gray-900 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg w-full sm:w-auto">
-                      Join the Waitlist
-                    </button>
-                    
-                    {/* Microcopy */}
-                    <p className="text-xs sm:text-sm md:text-base text-gray-500">
-                      Be the first to access new sports deals.
-                    </p>
+                  <div className="pt-2 sm:pt-4">
+                    <HeroCTA />
                   </div>
                 </div>
 
