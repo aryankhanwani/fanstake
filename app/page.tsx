@@ -15,7 +15,7 @@ export default function Home() {
   const { openModal } = useEmailModal();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-x-hidden">
+    <div className="min-h-screen bg-[#FFF8F0] overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section - Content Box with Mockup Inside */}
@@ -28,7 +28,7 @@ export default function Home() {
                 {/* Left Content */}
                 <div className="space-y-6 sm:space-y-8 order-1">
                   {/* Heading */}
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight animate-fade-in-up animation-delay-300">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1E3A8A] leading-tight animate-fade-in-up animation-delay-300">
                     <div className="block">Own a piece of</div>
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                       the{" "}
@@ -43,7 +43,7 @@ export default function Home() {
                   </h1>
                   
                   {/* Subheading */}
-                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed animate-fade-in-up animation-delay-400">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-[#4B5563] leading-relaxed animate-fade-in-up animation-delay-400">
                     FANSTAKE lets fans and investors access real sports investment opportunities — simple, transparent, and built for everyone.
                   </p>
                   
@@ -73,8 +73,8 @@ export default function Home() {
             </div>
             
             {/* Background Decorative Elements */}
-            <div className="absolute -bottom-8 sm:-bottom-12 -left-8 sm:-left-12 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-gray-200 rounded-3xl opacity-20 blur-3xl -z-0 animate-fade-in animation-delay-500"></div>
-            <div className="absolute -top-8 sm:-top-12 -right-8 sm:-right-12 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gray-300 rounded-3xl opacity-10 blur-3xl -z-0 animate-fade-in animation-delay-600"></div>
+            {/* <div className="absolute -bottom-8 sm:-bottom-12 -left-8 sm:-left-12 w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-[#FF6B35] rounded-3xl opacity-5 blur-3xl -z-0 animate-fade-in animation-delay-500"></div>
+            <div className="absolute -top-8 sm:-top-12 -right-8 sm:-right-12 w-40 h-40 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[#1E3A8A] rounded-3xl opacity-5 blur-3xl -z-0 animate-fade-in animation-delay-600"></div> */}
           </div>
         </div>
       </section>
@@ -83,16 +83,16 @@ export default function Home() {
       <section id="what-we-are" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-6 sm:p-8 md:p-12 lg:p-16 relative min-h-[400px] sm:min-h-[500px] flex flex-col" data-scroll>
-            <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 flex-1 flex flex-col">
+              <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 flex-1 flex flex-col">
               <div className="space-y-4 sm:space-y-6">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">
                   A new way to invest in sports
                 </h2>
-                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
+                <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-[#4B5563] leading-relaxed">
                   <p>
                     Sports is one of the world's biggest industries, yet real investment access has always been limited to billionaires and private groups.
                   </p>
-                  <p className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900">
+                  <p className="text-lg sm:text-xl md:text-2xl font-semibold text-[#FF6B35]">
                     FANSTAKE changes that.
                   </p>
                   <p>
@@ -104,7 +104,7 @@ export default function Home() {
               <div className="mt-auto pt-6 sm:pt-8">
                 <SplitText
                   text="FANSTAKE"
-                  className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-[10rem] font-bold text-gray-900 tracking-tight leading-none"
+                  className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-[10rem] font-bold text-[#1E3A8A] tracking-tight leading-none"
                   delay={70}
                   duration={3}
                   ease="elastic.out(1, 0.3)"
@@ -122,10 +122,10 @@ export default function Home() {
       </section>
 
       {/* Section 03 - Why People Love This */}
-      <section id="why-choose-us" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50">
+      <section id="why-choose-us" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 lg:mb-24" data-scroll>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mb-4">
               Why fans and investors choose us
             </h2>
           </div>
@@ -134,9 +134,9 @@ export default function Home() {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* Card 1 - Fans */}
             <div className="group relative" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-200 hover:border-gray-300 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-gray-300 blur-2xl"
+                  className="bg-[#FF6B35] blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -146,31 +146,31 @@ export default function Home() {
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="mb-6 sm:mb-8">
                     <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#1E3A8A] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
                         01
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Fans</h3>
+                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Fans</h3>
                     </div>
                   </div>
                   
                   <div className="flex-1 space-y-4 sm:space-y-6">
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-blue-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Move from watching to owning exposure</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Move from watching to owning exposure</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-blue-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Small ticket sizes</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Small ticket sizes</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-blue-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Feel connected to your favourite teams</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Feel connected to your favourite teams</p>
                     </div>
                   </div>
                 </div>
@@ -179,9 +179,9 @@ export default function Home() {
 
             {/* Card 2 - Investors */}
             <div className="group relative" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-200 hover:border-gray-300 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#FF6B35]/20 hover:border-[#FF6B35]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-gray-300 blur-2xl"
+                  className="bg-[#1E3A8A] blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -191,31 +191,31 @@ export default function Home() {
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="mb-6 sm:mb-8">
                     <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#FF6B35] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
                         02
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Investors</h3>
+                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Investors</h3>
                     </div>
                   </div>
                   
                   <div className="flex-1 space-y-4 sm:space-y-6">
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-green-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Access sports as an asset class</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Access sports as an asset class</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-green-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Diversify beyond stocks & crypto</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Diversify beyond stocks & crypto</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-green-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Clear, curated opportunities</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Clear, curated opportunities</p>
                     </div>
                   </div>
                 </div>
@@ -224,9 +224,9 @@ export default function Home() {
 
             {/* Card 3 - Everyone */}
             <div className="group relative sm:col-span-1 md:col-span-2 lg:col-span-1" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border border-gray-200 hover:border-gray-300 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#FF6B35]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-gray-300 blur-2xl"
+                  className="bg-[#FF6B35] blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -236,31 +236,31 @@ export default function Home() {
                 <div className="relative z-10 h-full flex flex-col">
                   <div className="mb-6 sm:mb-8">
                     <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#1E3A8A] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
                         03
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Everyone</h3>
+                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Everyone</h3>
                     </div>
                   </div>
                   
                   <div className="flex-1 space-y-4 sm:space-y-6">
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-purple-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Simple onboarding</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Simple onboarding</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-purple-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Transparent economics</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Transparent economics</p>
                     </div>
                     <div className="flex items-start gap-3 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-purple-600"></div>
+                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-gray-800 font-medium leading-relaxed">Modern, secure infrastructure</p>
+                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Modern, secure infrastructure</p>
                     </div>
                   </div>
                 </div>
@@ -271,10 +271,10 @@ export default function Home() {
       </section>
 
       {/* Section 04 - How It Works */}
-      <section id="how-it-works" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-white relative overflow-hidden" style={{ backgroundImage: 'radial-gradient(circle, #e5e7eb 1px, transparent 1px)', backgroundSize: '24px 24px' }}>
+      <section id="how-it-works" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-[#FFF8F0] relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16" data-scroll>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mb-4">
               How it works
             </h2>
           </div>
@@ -315,8 +315,8 @@ export default function Home() {
               {/* Step 1 */}
               <div className="step-item flex items-start gap-4 sm:gap-6 relative" data-step="1">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl sm:text-2xl font-bold text-gray-900 step-number">1</span>
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white step-number">1</span>
                   </div>
                   {/* Dotted line connector - extends to next step */}
                   <svg 
@@ -330,9 +330,10 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="48" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                   <svg 
@@ -346,15 +347,16 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="80" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                 </div>
                 <div className="flex-1 pt-1 sm:pt-2">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">Sign Up</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1E3A8A] mb-2">Sign Up</h3>
+                  <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                     Create your account in minutes with a simple, secure onboarding process. Get started with no hassle.
                   </p>
                 </div>
@@ -363,8 +365,8 @@ export default function Home() {
               {/* Step 2 */}
               <div className="step-item flex items-start gap-4 sm:gap-6 relative" data-step="2">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl sm:text-2xl font-bold text-gray-900 step-number">2</span>
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white step-number">2</span>
                   </div>
                   {/* Dotted line connector - extends to next step */}
                   <svg 
@@ -378,9 +380,10 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="48" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                   <svg 
@@ -394,15 +397,16 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="80" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                 </div>
                 <div className="flex-1 pt-1 sm:pt-2">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">Discover Deals</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1E3A8A] mb-2">Discover Deals</h3>
+                  <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                     Browse curated sports investment opportunities with transparent details. Find deals that match your interests.
                   </p>
                 </div>
@@ -411,8 +415,8 @@ export default function Home() {
               {/* Step 3 */}
               <div className="step-item flex items-start gap-4 sm:gap-6 relative" data-step="3">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl sm:text-2xl font-bold text-gray-900 step-number">3</span>
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#FF6B35] rounded-full flex items-center justify-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white step-number">3</span>
                   </div>
                   {/* Dotted line connector - extends to next step */}
                   <svg 
@@ -426,9 +430,10 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="48" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                   <svg 
@@ -442,15 +447,16 @@ export default function Home() {
                       y1="0" 
                       x2="1" 
                       y2="80" 
-                      stroke="#d1d5db" 
+                      stroke="#1E3A8A" 
                       strokeWidth="2" 
                       strokeDasharray="4 4"
+                      opacity="0.3"
                     />
                   </svg>
                 </div>
                 <div className="flex-1 pt-1 sm:pt-2">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">Invest Fractionally</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1E3A8A] mb-2">Invest Fractionally</h3>
+                  <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                     Start with small ticket sizes and invest in your favorite teams or opportunities. No large capital required.
                   </p>
                 </div>
@@ -459,13 +465,13 @@ export default function Home() {
               {/* Step 4 */}
               <div className="step-item flex items-start gap-4 sm:gap-6" data-step="4">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-gray-200 rounded-full flex items-center justify-center">
-                    <span className="text-xl sm:text-2xl font-bold text-gray-900 step-number">4</span>
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+                    <span className="text-xl sm:text-2xl font-bold text-white step-number">4</span>
                   </div>
                 </div>
                 <div className="flex-1 pt-1 sm:pt-2">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">Track Everything</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#1E3A8A] mb-2">Track Everything</h3>
+                  <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
                     Monitor your investments with real-time updates and comprehensive analytics. Stay informed about your portfolio.
                   </p>
                 </div>
@@ -477,7 +483,7 @@ export default function Home() {
           <div className="text-center mt-8 sm:mt-12" data-scroll>
             <Link 
               href="/how-it-works"
-              className="inline-flex items-center gap-2 bg-gray-900 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-semibold text-base sm:text-lg hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg group"
+              className="inline-flex items-center gap-2 bg-[#FF6B35] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-semibold text-base sm:text-lg hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-lg group"
             >
               See full process
               <span className="transform group-hover:translate-x-1 transition-transform">→</span>
@@ -489,42 +495,42 @@ export default function Home() {
       {/* Section 05 - Built For This Generation */}
       <section id="built-for-generation" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto space-y-8 md:space-y-16">
-          <h2 className="relative z-10 max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight" data-scroll>
+          <h2 className="relative z-10 max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A] tracking-tight" data-scroll>
             Simple. Transparent. Accessible.
           </h2>
 
           <div className="relative">
             <div className="relative z-10 space-y-4 sm:space-y-5 md:w-1/2">
-              <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                No jargon. No gated access. <span className="font-semibold text-gray-900">Just clean sports investment opportunities</span> designed for modern fans and investors.
+              <p className="text-sm sm:text-base md:text-lg text-[#4B5563] leading-relaxed">
+                No jargon. No gated access. <span className="font-semibold text-[#FF6B35]">Just clean sports investment opportunities</span> designed for modern fans and investors.
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-[#4B5563] leading-relaxed">
                 We open the doors for fans and investors to access curated sports deals — with small ticket sizes and transparent terms.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 sm:pt-8 sm:gap-6">
                 <div className="space-y-2 sm:space-y-2.5">
                   <div className="flex items-center gap-2 sm:gap-2.5">
-                    <div className="p-1.5 rounded-lg bg-blue-50">
-                      <Zap className="size-3 sm:size-4 text-blue-600" />
+                    <div className="p-1.5 rounded-lg bg-[#FF6B35]/10">
+                      <Zap className="size-3 sm:size-4 text-[#FF6B35]" />
                     </div>
-                    <h3 className="text-xs sm:text-sm font-semibold text-gray-900">Simple</h3>
+                    <h3 className="text-xs sm:text-sm font-semibold text-[#1E3A8A]">Simple</h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">No jargon. No gated access. Just clean sports investment opportunities.</p>
+                  <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">No jargon. No gated access. Just clean sports investment opportunities.</p>
                 </div>
                 <div className="space-y-2 sm:space-y-2.5">
                   <div className="flex items-center gap-2 sm:gap-2.5">
-                    <div className="p-1.5 rounded-lg bg-green-50">
-                      <Shield className="size-3 sm:size-4 text-green-600" />
+                    <div className="p-1.5 rounded-lg bg-[#1E3A8A]/10">
+                      <Shield className="size-3 sm:size-4 text-[#1E3A8A]" />
                     </div>
-                    <h3 className="text-xs sm:text-sm font-semibold text-gray-900">Transparent</h3>
+                    <h3 className="text-xs sm:text-sm font-semibold text-[#1E3A8A]">Transparent</h3>
                   </div>
-                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">Clear, curated opportunities with transparent terms and economics.</p>
+                  <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">Clear, curated opportunities with transparent terms and economics.</p>
                 </div>
               </div>
             </div>
             <div className="mt-8 sm:mt-12 h-fit md:absolute md:right-0 md:top-0 md:mt-0 md:w-1/2 md:pl-6 lg:pl-8">
-              <div className="border-gray-300/60 relative rounded-xl sm:rounded-2xl border border-dashed p-1.5 sm:p-2 bg-gray-50/50">
+              <div className="border-[#FF6B35]/30 relative rounded-xl sm:rounded-2xl border-2 border-dashed p-1.5 sm:p-2 bg-[#FFF8F0]">
                 <Image
                   src="/sec-51.png"
                   className="rounded-lg sm:rounded-[12px] shadow-lg w-full h-auto"
@@ -543,11 +549,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl" data-scroll>
             {/* Background with gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#1E3A8A] via-[#1E3A8A] to-[#1E3A8A]"></div>
             
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-white/5 rounded-full blur-3xl -mr-24 sm:-mr-32 md:-mr-40 lg:-mr-48 -mt-24 sm:-mt-32 md:-mt-40 lg:-mt-48"></div>
-            <div className="absolute bottom-0 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-white/5 rounded-full blur-3xl -ml-24 sm:-ml-32 md:-ml-40 lg:-ml-48 -mb-24 sm:-mb-32 md:-mb-40 lg:-mb-48"></div>
+            <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[#FF6B35]/10 rounded-full blur-3xl -mr-24 sm:-mr-32 md:-mr-40 lg:-mr-48 -mt-24 sm:-mt-32 md:-mt-40 lg:-mt-48"></div>
+            <div className="absolute bottom-0 left-0 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-[#FF6B35]/10 rounded-full blur-3xl -ml-24 sm:-ml-32 md:-ml-40 lg:-ml-48 -mb-24 sm:-mb-32 md:-mb-40 lg:-mb-48"></div>
             
             {/* Content */}
             <div className="relative z-10 p-8 sm:p-12 md:p-16 lg:p-20 text-center">
@@ -555,13 +561,13 @@ export default function Home() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
                   The future of sports investing starts here
                 </h2>
-                <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+                <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
                   Join thousands of fans and investors who are already part of the revolution.
                 </p>
                 <div className="pt-4 sm:pt-6">
                   <button 
                     onClick={openModal}
-                    className="bg-white text-gray-900 px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto"
+                    className="bg-[#FF6B35] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-xl tracking-wide uppercase hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-2xl w-full sm:w-auto"
                   >
                     Join the Waitlist
                   </button>

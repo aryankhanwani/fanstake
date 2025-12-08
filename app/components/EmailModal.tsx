@@ -78,26 +78,26 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
           {/* Close Button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="absolute top-4 right-4 p-2 rounded-lg hover:bg-[#FFF8F0] transition-colors"
             aria-label="Close modal"
           >
-            <X className="w-5 h-5 text-gray-500" />
+            <X className="w-5 h-5 text-[#4B5563]" />
           </button>
 
           {/* Content */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3A8A] mb-2">
                 Join the Waitlist
               </h2>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-sm sm:text-base text-[#4B5563]">
                 Be the first to access new sports deals.
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="email-input" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email-input" className="block text-sm font-medium text-[#1E3A8A] mb-2">
                   Email Address
                 </label>
                 <input
@@ -107,13 +107,13 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-[#1E3A8A]/20 bg-white text-base text-[#1E3A8A] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg"
+                className="w-full bg-[#FF6B35] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-lg"
               >
                 Join the Waitlist
               </button>

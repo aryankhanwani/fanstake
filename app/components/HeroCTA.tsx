@@ -12,7 +12,7 @@ export default function HeroCTA() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-full sm:w-64 md:w-72 px-3 sm:px-4 py-2.5 rounded-xl border border-gray-300 bg-white text-sm sm:text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-[3000ms] ease-in-out animate-fade-in-left"
+            className="w-full sm:w-64 md:w-72 px-3 sm:px-4 py-2.5 rounded-xl border-2 border-[#1E3A8A]/20 bg-white text-sm sm:text-base text-[#1E3A8A] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-[3000ms] ease-in-out animate-fade-in-left"
             style={{ animationDuration: "1.2s" }}
             autoFocus
           />
@@ -20,7 +20,7 @@ export default function HeroCTA() {
         <button
           type="button"
           onClick={() => !showEmail && setShowEmail(true)}
-          className={`bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition-all duration-[3000ms] ease-in-out transform hover:scale-105 shadow-lg w-full sm:w-auto text-center ${
+          className={`bg-[#FF6B35] text-white rounded-xl font-semibold hover:bg-[#E55A2B] transition-all duration-[3000ms] ease-in-out transform hover:scale-105 shadow-lg w-full sm:w-auto text-center ${
             showEmail
               ? "px-6 sm:px-7 md:px-8 py-2.5 sm:py-3.5 text-sm sm:text-base"
               : "px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg"
@@ -30,7 +30,7 @@ export default function HeroCTA() {
         </button>
       </div>
 
-      <p className="mt-2 text-xs sm:text-sm md:text-base text-gray-500">
+      <p className="mt-2 text-xs sm:text-sm md:text-base text-[#4B5563]">
         Be the first to access new sports deals.
       </p>
     </div>

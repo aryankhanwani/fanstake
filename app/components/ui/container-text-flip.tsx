@@ -108,9 +108,9 @@ export function ContainerTextFlip({
 
         "relative inline-block rounded-xl pt-2 pb-3 px-3 text-center font-bold text-white",
 
-        "[background:linear-gradient(to_bottom,#1f2937,#111827)]",
+        "bg-[#1E3A8A]",
 
-        "shadow-[inset_0_-1px_#030712,inset_0_0_0_1px_#374151,_0_4px_8px_#00000052]",
+        "shadow-[0_4px_8px_rgba(30,58,138,0.3)]",
 
         className
 
