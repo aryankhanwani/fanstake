@@ -42,7 +42,7 @@ export default function Navbar() {
             <div className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 relative shadow-[0_8px_16px_-4px_rgba(0,0,0,0.15),0_4px_8px_-2px_rgba(0,0,0,0.1),0_0_0_1px_rgba(0,0,0,0.08),inset_0_2px_4px_0_rgba(255,255,255,0.8),inset_0_-1px_0_0_rgba(0,0,0,0.05)] border border-gray-200/60 transform transition-transform hover:scale-[1.01]">
             <div className="flex items-center justify-between">
               {/* Logo */}
-              <Link href="/" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#1E3A8A]">
+              <Link href="/" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#374151]">
                 FANSTAKE
               </Link>
               
@@ -50,27 +50,27 @@ export default function Navbar() {
               <div className="hidden md:flex items-center gap-4 lg:gap-8">
                 <Link 
                   href="/how-it-works" 
-                  className={`text-[#1E3A8A] hover:text-[#1E3A8A] text-sm lg:text-base font-semibold tracking-wide uppercase transition-all px-4 lg:px-5 py-2 lg:py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
+                  className={`text-[#374151] hover:text-[#374151] text-sm lg:text-base font-semibold tracking-wide uppercase transition-all px-4 lg:px-5 py-2 lg:py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
                     isActive("/how-it-works") 
-                      ? "border-[#FF6B35]/30 bg-[#FFF8F0]" 
-                      : "border-transparent hover:border-[#FF6B35]/20"
+                      ? "border-[#FF5722]/30 bg-[#FFF8F0]" 
+                      : "border-transparent hover:border-[#FF5722]/20"
                   } animation-delay-200 animate-fade-in`}
                 >
                   How it works
                 </Link>
                 <Link 
                   href="/faq" 
-                  className={`text-[#1E3A8A] hover:text-[#1E3A8A] text-sm lg:text-base font-semibold tracking-wide uppercase transition-all px-4 lg:px-5 py-2 lg:py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
+                  className={`text-[#374151] hover:text-[#374151] text-sm lg:text-base font-semibold tracking-wide uppercase transition-all px-4 lg:px-5 py-2 lg:py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
                     isActive("/faq") 
-                      ? "border-[#FF6B35]/30 bg-[#FFF8F0]" 
-                      : "border-transparent hover:border-[#FF6B35]/20"
+                      ? "border-[#FF5722]/30 bg-[#FFF8F0]" 
+                      : "border-transparent hover:border-[#FF5722]/20"
                   } animation-delay-300 animate-fade-in`}
                 >
                   FAQ
                 </Link>
                 <button 
                   onClick={openModal}
-                  className="bg-[#FF6B35] text-white px-6 lg:px-8 py-2 lg:py-3 rounded-xl font-bold text-sm lg:text-base tracking-wide uppercase hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-md animation-delay-400 animate-fade-in"
+                  className="bg-[#FF5722] text-white px-6 lg:px-8 py-2 lg:py-3 rounded-xl font-bold text-sm lg:text-base tracking-wide uppercase hover:bg-[#E64A19] transition-all transform hover:scale-105 shadow-md animation-delay-400 animate-fade-in"
                 >
                   Join waitlist
                 </button>
@@ -79,7 +79,7 @@ export default function Navbar() {
               {/* Mobile Hamburger Button */}
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="md:hidden bg-[#FF6B35] text-white p-2.5 rounded-xl font-bold transition-all"
+                className="md:hidden bg-[#FF5722] text-white p-2.5 rounded-xl font-bold transition-all"
                 aria-label="Toggle menu"
               >
                 <div className="w-6 h-6 flex flex-col justify-center items-center gap-1.5">
@@ -112,10 +112,10 @@ export default function Navbar() {
                 <Link 
                   href="/how-it-works" 
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#1E3A8A] hover:text-[#1E3A8A] text-base font-semibold tracking-wide uppercase transition-all px-5 py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
+                  className={`text-[#374151] hover:text-[#374151] text-base font-semibold tracking-wide uppercase transition-all px-5 py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
                     isActive("/how-it-works") 
-                      ? "border-[#FF6B35]/30 bg-[#FFF8F0]" 
-                      : "border-transparent hover:border-[#FF6B35]/20"
+                      ? "border-[#FF5722]/30 bg-[#FFF8F0]" 
+                      : "border-transparent hover:border-[#FF5722]/20"
                   }`}
                 >
                   How it works
@@ -123,10 +123,10 @@ export default function Navbar() {
                 <Link 
                   href="/faq" 
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-[#1E3A8A] hover:text-[#1E3A8A] text-base font-semibold tracking-wide uppercase transition-all px-5 py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
+                  className={`text-[#374151] hover:text-[#374151] text-base font-semibold tracking-wide uppercase transition-all px-5 py-3 rounded-xl hover:bg-[#FFF8F0] border-2 ${
                     isActive("/faq") 
-                      ? "border-[#FF6B35]/30 bg-[#FFF8F0]" 
-                      : "border-transparent hover:border-[#FF6B35]/20"
+                      ? "border-[#FF5722]/30 bg-[#FFF8F0]" 
+                      : "border-transparent hover:border-[#FF5722]/20"
                   }`}
                 >
                   FAQ
@@ -136,7 +136,7 @@ export default function Navbar() {
                     openModal();
                     setIsMenuOpen(false);
                   }}
-                  className="bg-[#FF6B35] text-white px-5 py-3 rounded-xl font-bold text-base tracking-wide uppercase hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-md w-full text-left"
+                  className="bg-[#FF5722] text-white px-5 py-3 rounded-xl font-bold text-base tracking-wide uppercase hover:bg-[#E64A19] transition-all transform hover:scale-105 shadow-md w-full text-left"
                 >
                   Join waitlist
                 </button>

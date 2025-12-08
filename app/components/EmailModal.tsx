@@ -126,7 +126,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
           {/* Content */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1E3A8A] mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#374151] mb-2">
                 Join the Waitlist
               </h2>
               <p className="text-sm sm:text-base text-[#4B5563]">
@@ -136,7 +136,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="email-input" className="block text-sm font-medium text-[#1E3A8A] mb-2">
+                <label htmlFor="email-input" className="block text-sm font-medium text-[#374151] mb-2">
                   Email Address
                 </label>
                 <input
@@ -146,7 +146,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
                   required
-                  className="w-full px-4 py-3 rounded-xl border-2 border-[#1E3A8A]/20 bg-white text-base text-[#1E3A8A] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-[#374151]/20 bg-white text-base text-[#374151] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-[#FF5722] transition-all"
                 />
               </div>
 
@@ -168,7 +168,7 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#FF6B35] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="w-full bg-[#FF5722] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#E64A19] transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 {isSubmitting ? "Submitting..." : "Join the Waitlist"}
               </button>

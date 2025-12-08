@@ -56,7 +56,7 @@ export default function HeroCTA() {
               placeholder="Enter your email"
               required
               disabled={isSubmitting}
-              className="w-full sm:w-64 md:w-72 px-3 sm:px-4 py-2.5 rounded-xl border-2 border-[#1E3A8A]/20 bg-white text-sm sm:text-base text-[#1E3A8A] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF6B35] focus:border-[#FF6B35] transition-all duration-[3000ms] ease-in-out animate-fade-in-left disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full sm:w-64 md:w-72 px-3 sm:px-4 py-2.5 rounded-xl border-2 border-[#374151]/20 bg-white text-sm sm:text-base text-[#374151] placeholder:text-[#4B5563] focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-[#FF5722] transition-all duration-[3000ms] ease-in-out animate-fade-in-left disabled:opacity-50 disabled:cursor-not-allowed"
               style={{ animationDuration: "1.2s" }}
               autoFocus
             />
@@ -65,7 +65,7 @@ export default function HeroCTA() {
             type={showEmail ? "submit" : "button"}
             onClick={() => !showEmail && setShowEmail(true)}
             disabled={isSubmitting}
-            className={`bg-[#FF6B35] text-white rounded-xl font-semibold hover:bg-[#E55A2B] transition-all duration-[3000ms] ease-in-out transform hover:scale-105 shadow-lg w-full sm:w-auto text-center disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none ${
+            className={`bg-[#FF5722] text-white rounded-xl font-semibold hover:bg-[#E64A19] transition-all duration-[3000ms] ease-in-out transform hover:scale-105 shadow-lg w-full sm:w-auto text-center disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none ${
               showEmail
                 ? "px-6 sm:px-7 md:px-8 py-2.5 sm:py-3.5 text-sm sm:text-base"
                 : "px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg"
