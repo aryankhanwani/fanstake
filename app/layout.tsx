@@ -3,6 +3,7 @@ import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 import { EmailModalProvider } from "./components/EmailModalProvider";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${bricolageGrotesque.variable} antialiased`}
       >
+        <SmoothCursor />
         <EmailModalProvider>
           <SmoothScroll>{children}</SmoothScroll>
         </EmailModalProvider>

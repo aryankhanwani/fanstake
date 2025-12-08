@@ -134,9 +134,9 @@ export default function Home() {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* Card 1 - Fans */}
             <div className="group relative" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-[#FF6B35] blur-2xl"
+                  className="bg-[#FF6B35]/50 blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -144,33 +144,33 @@ export default function Home() {
                   }}
                 />
                 <div className="relative z-10 h-full flex flex-col">
-                  <div className="mb-6 sm:mb-8">
-                    <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#1E3A8A] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                  <div className="mb-4 sm:mb-8">
+                    <div className="inline-flex items-center gap-2 sm:gap-4 mb-3 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-20 sm:h-20 bg-[#FF6B35] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-xl sm:text-3xl font-bold shadow-xl">
                         01
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Fans</h3>
+                      <h3 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Fans</h3>
                     </div>
                   </div>
                   
-                  <div className="flex-1 space-y-4 sm:space-y-6">
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                  <div className="flex-1 space-y-2.5 sm:space-y-6">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Move from watching to owning exposure</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Move from watching to owning exposure</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Small ticket sizes</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Small ticket sizes</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Feel connected to your favourite teams</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Feel connected to your favourite teams</p>
                     </div>
                   </div>
                 </div>
@@ -179,9 +179,9 @@ export default function Home() {
 
             {/* Card 2 - Investors */}
             <div className="group relative" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#FF6B35]/20 hover:border-[#FF6B35]/40 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-[#1E3A8A] blur-2xl"
+                  className="bg-[#FF6B35]/50 blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -189,33 +189,33 @@ export default function Home() {
                   }}
                 />
                 <div className="relative z-10 h-full flex flex-col">
-                  <div className="mb-6 sm:mb-8">
-                    <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#FF6B35] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                  <div className="mb-4 sm:mb-8">
+                    <div className="inline-flex items-center gap-2 sm:gap-4 mb-3 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-20 sm:h-20 bg-[#FF6B35] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-xl sm:text-3xl font-bold shadow-xl">
                         02
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Investors</h3>
+                      <h3 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Investors</h3>
                     </div>
                   </div>
                   
-                  <div className="flex-1 space-y-4 sm:space-y-6">
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                  <div className="flex-1 space-y-2.5 sm:space-y-6">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Access sports as an asset class</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Access sports as an asset class</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Diversify beyond stocks & crypto</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Diversify beyond stocks & crypto</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#1E3A8A]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Clear, curated opportunities</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Clear, curated opportunities</p>
                     </div>
                   </div>
                 </div>
@@ -224,9 +224,9 @@ export default function Home() {
 
             {/* Card 3 - Everyone */}
             <div className="group relative sm:col-span-1 md:col-span-2 lg:col-span-1" data-scroll-card>
-              <div className="h-full rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#FF6B35]/40 transition-all duration-500 relative overflow-hidden bg-white">
+              <div className="h-full rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 transition-all duration-500 relative overflow-hidden bg-white">
                 <Spotlight
-                  className="bg-[#FF6B35] blur-2xl"
+                  className="bg-[#FF6B35]/50 blur-2xl"
                   size={200}
                   springOptions={{
                     bounce: 0.3,
@@ -234,33 +234,33 @@ export default function Home() {
                   }}
                 />
                 <div className="relative z-10 h-full flex flex-col">
-                  <div className="mb-6 sm:mb-8">
-                    <div className="inline-flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#1E3A8A] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-2xl sm:text-3xl font-bold shadow-xl">
+                  <div className="mb-4 sm:mb-8">
+                    <div className="inline-flex items-center gap-2 sm:gap-4 mb-3 sm:mb-6">
+                      <div className="w-12 h-12 sm:w-20 sm:h-20 bg-[#FF6B35] rounded-xl sm:rounded-2xl flex items-center justify-center text-white text-xl sm:text-3xl font-bold shadow-xl">
                         03
                       </div>
-                      <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Everyone</h3>
+                      <h3 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#1E3A8A]">Everyone</h3>
                     </div>
                   </div>
                   
-                  <div className="flex-1 space-y-4 sm:space-y-6">
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                  <div className="flex-1 space-y-2.5 sm:space-y-6">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Simple onboarding</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Simple onboarding</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Transparent economics</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Transparent economics</p>
                     </div>
-                    <div className="flex items-start gap-3 sm:gap-4 group/item">
+                    <div className="flex items-start gap-2 sm:gap-4 group/item">
                       <div className="flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform mt-0.5">
-                        <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
+                        <div className="w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-lg bg-[#FF6B35]"></div>
                       </div>
-                      <p className="text-base sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Modern, secure infrastructure</p>
+                      <p className="text-sm sm:text-lg text-[#1E3A8A] font-medium leading-relaxed">Modern, secure infrastructure</p>
                     </div>
                   </div>
                 </div>
@@ -274,6 +274,7 @@ export default function Home() {
       <section id="how-it-works" className="w-full px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-32 bg-[#FFF8F0] relative overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16" data-scroll>
+            <p className="text-xs sm:text-sm font-semibold text-[#FF6B35] uppercase tracking-wider mb-2">STEP BY STEP</p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mb-4">
               How it works
             </h2>
@@ -365,7 +366,7 @@ export default function Home() {
               {/* Step 2 */}
               <div className="step-item flex items-start gap-4 sm:gap-6 relative" data-step="2">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#FF6B35] rounded-full flex items-center justify-center">
                     <span className="text-xl sm:text-2xl font-bold text-white step-number">2</span>
                   </div>
                   {/* Dotted line connector - extends to next step */}
@@ -465,7 +466,7 @@ export default function Home() {
               {/* Step 4 */}
               <div className="step-item flex items-start gap-4 sm:gap-6" data-step="4">
                 <div className="relative flex-shrink-0">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#1E3A8A] rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#FF6B35] rounded-full flex items-center justify-center">
                     <span className="text-xl sm:text-2xl font-bold text-white step-number">4</span>
                   </div>
                 </div>

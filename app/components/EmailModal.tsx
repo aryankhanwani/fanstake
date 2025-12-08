@@ -12,7 +12,8 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
   const [email, setEmail] = useState("");
   const [mounted, setMounted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error" | "duplicate">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     setMounted(true);
@@ -60,17 +61,26 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
       if (response.ok) {
         setSubmitStatus("success");
         setEmail("");
+        setErrorMessage("");
         // Close modal after 2 seconds on success
         setTimeout(() => {
           onClose();
           setSubmitStatus("idle");
         }, 2000);
       } else {
-        setSubmitStatus("error");
+        // Check if it's a duplicate email (409 Conflict)
+        if (response.status === 409) {
+          setSubmitStatus("duplicate");
+          setErrorMessage(data.error || "This email is already registered.");
+        } else {
+          setSubmitStatus("error");
+          setErrorMessage(data.error || "This email is already registered. You are already on the waitlist!");
+        }
         console.error("Error submitting email:", data.error);
       }
     } catch (error) {
       setSubmitStatus("error");
+      setErrorMessage("This email is already registered. You are already on the waitlist!");
       console.error("Error submitting email:", error);
     } finally {
       setIsSubmitting(false);
@@ -145,9 +155,14 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
                   ✓ Successfully joined! Check your Telegram for confirmation.
                 </div>
               )}
+              {submitStatus === "duplicate" && (
+                <div className="p-3 bg-yellow-50 border-2 border-yellow-200 rounded-xl text-yellow-700 text-sm text-center">
+                  ℹ {errorMessage || "This email is already registered. You are already on the waitlist!"}
+                </div>
+              )}
               {submitStatus === "error" && (
                 <div className="p-3 bg-red-50 border-2 border-red-200 rounded-xl text-red-700 text-sm text-center">
-                  ✗ Something went wrong. Please try again.
+                  ✗ {errorMessage || "This email is already registered. You are already on the waitlist!"}
                 </div>
               )}
               <button

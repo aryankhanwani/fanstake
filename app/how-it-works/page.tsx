@@ -150,17 +150,17 @@ export default function HowItWorks() {
                         <div className="relative mb-3 sm:mb-4">
                           <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center transition-all duration-500 ${
                             isActive 
-                              ? step.id % 2 === 1 ? 'bg-[#FF6B35] text-white scale-110 shadow-lg' : 'bg-[#1E3A8A] text-white scale-110 shadow-lg'
+                              ? 'bg-[#FF6B35] text-white scale-110 shadow-lg'
                               : isCompleted
-                              ? step.id % 2 === 1 ? 'bg-[#FF6B35]/60 text-white' : 'bg-[#1E3A8A]/60 text-white'
-                              : 'bg-[#FFF8F0] text-[#4B5563] border-2 border-[#1E3A8A]/20'
+                              ? 'bg-[#FF6B35]/60 text-white'
+                              : 'bg-[#FFF8F0] text-[#4B5563] border-2 border-[#FF6B35]/20'
                           }`}>
                             <span className="text-lg sm:text-xl font-bold">{step.id}</span>
                           </div>
                           
                           {/* Progress indicator on active step */}
                           {isActive && (
-                            <div className={`absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 ${step.id % 2 === 1 ? 'bg-[#FF6B35]' : 'bg-[#1E3A8A]'} rounded-full animate-pulse`}></div>
+                            <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-[#FF6B35] rounded-full animate-pulse"></div>
                           )}
                         </div>
 
@@ -179,12 +179,12 @@ export default function HowItWorks() {
                         <div className="absolute bottom-0 left-0 right-0 h-0.5">
                           {/* Background border line */}
                           <div className={`absolute bottom-0 left-0 right-0 h-0.5 ${
-                            isCompleted ? step.id % 2 === 1 ? 'bg-[#FF6B35]/60' : 'bg-[#1E3A8A]/60' : 'bg-[#1E3A8A]/10'
+                            isCompleted ? 'bg-[#FF6B35]/60' : 'bg-[#FF6B35]/10'
                           }`}></div>
                           {/* Animated progress border */}
                           {isActive && (
                             <div 
-                              className={`absolute bottom-0 left-0 h-0.5 ${step.id % 2 === 1 ? 'bg-[#FF6B35]' : 'bg-[#1E3A8A]'} transition-all duration-100 ease-linear`}
+                              className="absolute bottom-0 left-0 h-0.5 bg-[#FF6B35] transition-all duration-100 ease-linear"
                               style={{ width: `${progress}%` }}
                             ></div>
                           )}
@@ -252,9 +252,9 @@ export default function HowItWorks() {
           
           <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-5" data-scroll>
             {/* Card 1 - What You Actually Own (Large) */}
-            <Card className="group overflow-hidden bg-white shadow-lg sm:col-span-5 lg:col-span-3 sm:rounded-xl lg:rounded-none lg:rounded-tl-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
+            <Card className="group overflow-hidden bg-white shadow-lg sm:col-span-5 lg:col-span-3 rounded-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
               <CardHeader className="p-4 sm:p-5 md:p-6 pb-3">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#1E3A8A] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FF6B35] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
                   <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-[#1E3A8A] mb-2">
@@ -269,7 +269,7 @@ export default function HowItWorks() {
               </CardHeader>
               <div className="relative h-fit pl-4 sm:pl-5 md:pl-6 pb-4 sm:pb-5 md:pb-6 mt-auto">
                 <div className="absolute -inset-2 sm:-inset-3 [background:radial-gradient(75%_95%_at_50%_0%,transparent,rgba(255,255,255,0.8)_100%)]"></div>
-                <div className="bg-gradient-to-br from-[#FFF8F0] to-[#FF6B35]/10 overflow-hidden rounded-tl-lg border-l-2 border-t-2 border-[#FF6B35]/20 pl-1 sm:pl-1.5 pt-1 sm:pt-1.5">
+                <div className="bg-gradient-to-br from-[#FFF8F0] to-[#FF6B35]/10 overflow-hidden rounded-lg border-2 border-[#FF6B35]/20 p-1 sm:p-1.5">
                   <Image
                     src="/sec-5.png"
                     alt="Sports investment economics"
@@ -282,7 +282,7 @@ export default function HowItWorks() {
             </Card>
 
             {/* Card 2 - Tech Layer (Medium) */}
-            <Card className="group overflow-hidden bg-white shadow-lg sm:col-span-5 lg:col-span-2 sm:rounded-xl lg:rounded-none lg:rounded-tr-xl border-2 border-[#FF6B35]/20 hover:border-[#FF6B35]/40 hover:shadow-xl transition-all flex flex-col">
+            <Card className="group overflow-hidden bg-white shadow-lg sm:col-span-5 lg:col-span-2 rounded-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
               <div className="p-4 sm:p-5 md:p-6 flex flex-col h-full">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FF6B35] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
                   <Lock className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -296,7 +296,7 @@ export default function HowItWorks() {
                 <div className="mt-auto">
                   <div className="relative">
                     <div className="absolute -inset-1 sm:-inset-2 [background:radial-gradient(50%_75%_at_75%_50%,transparent,rgba(255,255,255,0.8)_100%)]"></div>
-                    <div className="aspect-video overflow-hidden rounded-lg border-2 border-[#1E3A8A]/20 bg-[#FFF8F0] relative max-h-20 sm:max-h-24">
+                    <div className="aspect-video overflow-hidden rounded-lg border-2 border-[#FF6B35]/20 bg-[#FFF8F0] relative max-h-20 sm:max-h-24">
                       <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-[#FF6B35] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                     </div>
                   </div>
@@ -305,8 +305,8 @@ export default function HowItWorks() {
             </Card>
 
             {/* Card 3 - Fees (Small) */}
-            <Card className="group p-4 sm:p-5 md:p-6 bg-white shadow-lg sm:col-span-5 lg:col-span-2 sm:rounded-xl lg:rounded-none lg:rounded-bl-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#1E3A8A] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
+            <Card className="group p-4 sm:p-5 md:p-6 bg-white shadow-lg sm:col-span-5 lg:col-span-2 rounded-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FF6B35] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
                 <DollarSign className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
               <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#1E3A8A] mb-3">
@@ -329,7 +329,7 @@ export default function HowItWorks() {
             </Card>
 
             {/* Card 4 - Additional Feature (Large) */}
-            <Card className="group relative bg-white shadow-lg sm:col-span-5 lg:col-span-3 sm:rounded-xl lg:rounded-none lg:rounded-br-xl border-2 border-[#FF6B35]/20 hover:border-[#FF6B35]/40 hover:shadow-xl transition-all flex flex-col">
+            <Card className="group relative bg-white shadow-lg sm:col-span-5 lg:col-span-3 rounded-xl border-2 border-[#1E3A8A]/20 hover:border-[#1E3A8A]/40 hover:shadow-xl transition-all flex flex-col">
               <div className="p-4 sm:p-5 md:p-6 flex flex-col h-full">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#FF6B35] rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4">
                   <BarChart3 className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -347,7 +347,7 @@ export default function HowItWorks() {
                   </div>
                   <span>•</span>
                   <div className="flex items-center gap-1">
-                    <div className="w-2 h-2 rounded-full bg-[#1E3A8A]"></div>
+                    <div className="w-2 h-2 rounded-full bg-[#FF6B35]"></div>
                     <span>Analytics</span>
                   </div>
                 </div>

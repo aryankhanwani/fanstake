@@ -39,7 +39,7 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-[100] w-full bg-transparent">
         <div className="w-full px-4 sm:px-6 lg:px-8 pt-3 sm:pt-4">
           <div className="max-w-7xl mx-auto">
-            <div className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 relative shadow-[0_8px_16px_-4px_rgba(0,0,0,0.15),0_4px_8px_-2px_rgba(0,0,0,0.1),0_0_0_1px_rgba(0,0,0,0.08),inset_0_2px_4px_0_rgba(255,255,255,0.8),inset_0_-1px_0_0_rgba(0,0,0,0.05)] before:absolute before:inset-0 before:rounded-xl sm:before:rounded-2xl before:bg-gradient-to-b before:from-white/60 before:via-white/20 before:to-transparent before:pointer-events-none border border-gray-200/60 transform transition-transform hover:scale-[1.01]">
+            <div className="bg-white rounded-xl sm:rounded-2xl px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 relative shadow-[0_8px_16px_-4px_rgba(0,0,0,0.15),0_4px_8px_-2px_rgba(0,0,0,0.1),0_0_0_1px_rgba(0,0,0,0.08),inset_0_2px_4px_0_rgba(255,255,255,0.8),inset_0_-1px_0_0_rgba(0,0,0,0.05)] border border-gray-200/60 transform transition-transform hover:scale-[1.01]">
             <div className="flex items-center justify-between">
               {/* Logo */}
               <Link href="/" className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#1E3A8A]">

@@ -82,7 +82,7 @@ export default function HeroCTA() {
         )}
         {submitStatus === "error" && (
           <div className="p-2 bg-red-50 border-2 border-red-200 rounded-xl text-red-700 text-xs sm:text-sm text-center animate-fade-in">
-            ✗ Something went wrong. Please try again.
+            ✗ This email is already registered. You are already on the waitlist!
           </div>
         )}
       </form>
