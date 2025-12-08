@@ -11,6 +11,8 @@ interface EmailModalProps {
 export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
   const [email, setEmail] = useState("");
   const [mounted, setMounted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
   useEffect(() => {
     setMounted(true);
@@ -39,13 +41,40 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
 
   if (!mounted) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle email submission here
-    console.log("Email submitted:", email);
-    // You can add your API call here
-    setEmail("");
-    onClose();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setEmail("");
+        // Close modal after 2 seconds on success
+        setTimeout(() => {
+          onClose();
+          setSubmitStatus("idle");
+        }, 2000);
+      } else {
+        setSubmitStatus("error");
+        console.error("Error submitting email:", data.error);
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+      console.error("Error submitting email:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -111,11 +140,22 @@ export default function EmailModal({ isOpen, onClose }: EmailModalProps) {
                 />
               </div>
 
+              {submitStatus === "success" && (
+                <div className="p-3 bg-green-50 border-2 border-green-200 rounded-xl text-green-700 text-sm text-center">
+                  ✓ Successfully joined! Check your Telegram for confirmation.
+                </div>
+              )}
+              {submitStatus === "error" && (
+                <div className="p-3 bg-red-50 border-2 border-red-200 rounded-xl text-red-700 text-sm text-center">
+                  ✗ Something went wrong. Please try again.
+                </div>
+              )}
               <button
                 type="submit"
-                className="w-full bg-[#FF6B35] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-lg"
+                disabled={isSubmitting}
+                className="w-full bg-[#FF6B35] text-white px-6 py-3 rounded-xl font-semibold text-base hover:bg-[#E55A2B] transition-all transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                Join the Waitlist
+                {isSubmitting ? "Submitting..." : "Join the Waitlist"}
               </button>
             </form>
           </div>
